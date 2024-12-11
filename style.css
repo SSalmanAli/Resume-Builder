@@ -1,0 +1,241 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0E103D, #69306D);
+    color: #D3BCC0;
+    transition: background 0.5s ease-in-out;
+}
+
+#coco{
+    margin-left : 220px;
+    margin-bottom: 20px;
+}
+
+#buttons{
+    display: flex;
+    gap: 20px;
+}
+
+#mainheading{
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #F2D7EE;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+fieldset {
+    background: #A5668B;
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 80%;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+fieldset:hover {
+    background: #69306D;
+}
+
+
+legend {
+    font-size: 1.3em;
+    color: #F2D7EE;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    color: #F2D7EE;
+    font-size: 1.1em;
+    margin-top: 0.7rem;
+}
+
+
+textarea{
+    border-radius: 10px;
+    height: 130px;
+}  
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.85em;
+    margin-top: 0.5em;
+    border: 2px solid #A5668B;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #0E103D;
+    background: #D3BCC0;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #F2D7EE;
+    outline:blanchedalmond;
+}
+
+button {
+    background: #9c3270;
+    border: none;
+    color: #F2D7EE;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #69306D;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+#r-page {
+    
+    background: #A5668B;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin-top: 2em;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+#r-page img{
+width: 160px;
+height: 160px;
+object-fit: cover;
+border-radius:50%;
+display: block;
+margin: auto;
+border: 3px solid #69306D;
+}
+
+
+#r-page h1,
+#r-page h2 {
+    color: #F2D7EE;
+}
+
+#r-page h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+
+
+#resume-work {
+    color: #D3BCC0;
+    font-size: medium;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 0.8em 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 1.2em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 1em;
+        padding: 0.75em;
+    }
+
+    button {
+        font-size: 1em;
+        width: 100%;
+        padding: 1em;
+    }
+
+    #r-page {
+        width: 100%;
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    fieldset {
+        padding: 1em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 0.9em;
+    }
+
+    #r-page {
+        padding: 1em;
+    }
+}
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainheading">DYNAMIC RESUME BUILDER</h1>
+    <form id="resumeForm">
+
+<!-- fieldset 1 -->
+        <fieldset>
+            <legend>Personal information</legend>
+            <label>Username:</label>
+            <input type="text" id="Uname" placeholder="Username" required>
+<br><br>
+            <label for="photo">Upload photo:</label>
+            <input type="file" id="photo" name="photo1" required>
+
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname1" placeholder="FullName" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="eml" name="eml1" placeholder="Email" >
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="num1" id="num" required placeholder="No....">
+        </fieldset>
+
+
+<!-- fieldset 2 -->
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="dgre" name="dgre1" placeholder="....." required>
+
+            <label for="school">School:</label>
+            <input type="text" id="sch" name="sch1" placeholder="....." required>
+
+        </fieldset>
+
+
+<!-- fieldset 3 -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="details">Details:</label>
+            <textarea type="text" id="dtls" name="dtls1" placeholder="......."></textarea>
+        </fieldset>
+
+
+<!-- fieldset 4 -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">List down your Skills:</label>
+            <textarea type="text" id="skil" name="skil1" placeholder="......."></textarea>
+        </fieldset>
+
+        <button id="coco" type="submit">Generate form</button>
+    </form>
+</div>
+
+
+
+
+
+    <div id="r-page" class="rpg hidden">
+        <div id="r-content" class="rc">
+            <img id="r-img" class="rp" src="" alt="User pic">
+        
+        <h1 id="resume-name"></h1>
+        <p id="resume-email"></p>
+        <p id="resume-tel"></p>
+        
+
+        <h2>Education</h2>
+        <p id="resume-edu"></p>
+
+        <h2>Work Experience<h2>
+        <p id="resume-work"></p>
+
+        <h2>Skills</h2>
+        <p id="resume-skills"></p>
+
+        </div>
+        <div id="buttons">
+        <button id="edit">Edit</button>
+        <button id="back" onclick="window.location.href='index.html'">Go back</button>
+        <button id="share">Share Link</button>
+        <button id="pdf">Download as a PDF</button>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
